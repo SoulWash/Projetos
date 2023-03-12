@@ -1,0 +1,144 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    max-width: 1280px;
+    margin:auto;
+}
+
+main::after{
+    content: '';
+    min-height: 100vh;
+    min-width: 100vw;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: radial-gradient(circle, rgba(0, 0, 0, 0.127) 66%, rgba(254, 220, 26, 0.139) 92%);
+    z-index: -1;
+}
+
+.conteudo {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    justify-content: space-evenly;
+}
+
+.informacoes {
+    display: flex;
+    flex-direction: column;
+}
+
+.informacoes .logo {
+    max-width: 350px;
+    margin-bottom: 50px;
+}
+
+.informacoes .descricao {
+    width: 49%;
+    color: #FEDC1A;
+    font-size: 1.2rem;
+    line-height: 30px;
+    background-color: rgba(0, 0, 0, 0.234);
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.assistir {
+    margin-top: 20px;
+    background-color: #FEDC1A;
+    color: #000;
+    width: 200px;
+    padding: 20px 14px;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-weight: bold;
+    cursor: pointer;
+
+    transition: all .350s ease-in-out;
+}
+.assistir:hover {  
+    background: #000;
+    color: #FEDC1A;
+    transform: scale(1.1);
+}
+
+.botoes-carrossel {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.botoes-carrossel .botao {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    border: 2px solid transparent;
+    cursor: pointer;
+    border-color: #FEDC1A;
+    background-color: #000;
+
+}
+
+.botoes-carrossel .botao.selecionado {
+    background-color: #f50606;
+}
+
+.menu-lateral {
+    background-color: transparent;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 80px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100%;
+}
+
+.menu-lateral ul {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.menu-lateral .icone {
+    width: 30px;
+    filter: invert(1);
+    transition: .3s ease-in-out;
+}
+
+.menu-lateral .icone:hover{
+    transform: scale(1.2);
+}
+
+.carrossel {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: -1;
+}
+
+.carrossel .image {
+    width: 100%;
+    height: 100vh;
+    object-position: top;
+    object-fit: cover;
+    display: none;
+    animation: mudarImage 0.7s;
+}
+
+.carrossel .image.ativa {
+    display: block;
+}
+@keyframes mudarImage {
+    from {
+        opacity: 0.85;
+    }
+    to {
+        opacity: 1;
+    }
+}
