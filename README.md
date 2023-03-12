@@ -30,7 +30,8 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 ## 💻 Projetos
 
-<a href="https://soulwash.github.io/Projetos/ProjetoMario/">Project Mario 🧰</a>
+<a href="https://soulwash.github.io/Projetos/ProjetoMario/">Project Mario 🧰</a><br>
+<a href="https://soulwash.github.io/Projetos/TheBoys/">The Boys 💥</a>
 
 
 ## :memo: Licença
