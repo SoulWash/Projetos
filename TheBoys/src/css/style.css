@@ -11,7 +11,7 @@ main::after{
     position: fixed;
     top: 0;
     left: 0;
-    background: radial-gradient(circle, rgba(0, 0, 0, 0.127) 66%, rgba(254, 220, 26, 0.139) 92%);
+    background: radial-gradient(circle, rgba(238,219,66,0) 75%, rgba(240,237,40,0.9220063025210083) 77%, rgba(0,0,0,0.8995973389355743) 81%);
     z-index: -1;
 }
 
@@ -68,21 +68,30 @@ main::after{
     display: flex;
     justify-content: center;
     gap: 20px;
+
+    align-items: center;
 }
 
 .botoes-carrossel .botao {
-    width: 15px;
-    height: 15px;
+    width: 20px;
+    height: 20px;
     border-radius: 50%;
     border: 2px solid transparent;
     cursor: pointer;
     border-color: #FEDC1A;
     background-color: #000;
 
+
 }
+.botao:hover {
+    transform: scale(1.1);
+}
+
 
 .botoes-carrossel .botao.selecionado {
     background-color: #f50606;
+    width: 25px;
+    height: 25px;
 }
 
 .menu-lateral {
