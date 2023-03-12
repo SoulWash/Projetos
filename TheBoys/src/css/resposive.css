@@ -18,6 +18,9 @@
     body {
         padding: 40px;
     }
+    main::after{
+        z-index: -2;
+    }
     .informacoes .logo{
         max-width: 300px;
     }

@@ -11,7 +11,7 @@ main::after{
     position: fixed;
     top: 0;
     left: 0;
-    background: radial-gradient(circle, rgba(238,219,66,0) 75%, rgba(240,237,40,0.9220063025210083) 77%, rgba(0,0,0,0.8995973389355743) 81%);
+    background: radial-gradient(circle, rgba(238,219,66,0) 85%, rgba(240,237,40,0.9220063025210083) 87%, rgba(0,0,0,0.8995973389355743) 90%);
     z-index: -1;
 }
 
@@ -80,8 +80,6 @@ main::after{
     cursor: pointer;
     border-color: #FEDC1A;
     background-color: #000;
-
-
 }
 .botao:hover {
     transform: scale(1.1);
