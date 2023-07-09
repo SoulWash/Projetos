@@ -32,6 +32,8 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 <a href="https://soulwash.github.io/Projetos/ProjetoMario/" target="_blank">Project Mario 🧰</a><br>
 <a href="https://soulwash.github.io/Projetos/TheBoys/" target="_blank">The Boys 💥</a><br>
+<a href="https://soulwash.github.io/Projetos/WeForm/" target="_blank">We Form 🐶</a><br>
+<a href="https://soulwash.github.io/Projetos/projectX-MEN/" target="_blank">Project X-MEN 🦸‍♂️</a><br>
 
 
 ## :memo: Licença

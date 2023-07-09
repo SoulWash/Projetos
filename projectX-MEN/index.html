@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--CSS-->
+    <link rel="stylesheet" href="./assets/css/script.css">
+    <link rel="stylesheet" href="./assets/css/queries.css">
+    <link rel="stylesheet" href="./assets/css/animations.css">
+    <!--Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+    <link rel="shortcut icon" href="./assets/imagens/logo.svg" type="image/svg">
+
+    <title>Project X-Men</title>
+</head>
+
+<body>
+    <header class="header">
+        <img src="./assets/imagens/logo.svg" alt="X-men logo">
+    </header>
+
+    <main class="characters-selection">
+        <section class="characters">
+            <h1 class="title">Select a character</h1>
+            <ul class="list-character">
+                <li class="character selected" id="cyclops" data-name="Cyclops" data-description="Cyclops is a mutant, possessing the power to
+                project pure energy from his ruby-red eyes.">
+                    <img src="./assets/imagens/card-cyclops.jpg" alt="Character Cyclops member of the x-men">
+                </li>
+                <li class="character" id="jean-grey" data-name="Jean Gray" data-description="Jean Gray is an omega-level mutant and the main avatar of the Phoenix Force, in which he manifests cosmic powers.">
+                    <img src="./assets/imagens/card-jean-grey.jpg" alt="Character Jean Grey member of the x-men" >
+                </li>
+                <li class="character" id="kitty-pryde" data-name="Kitty Pryde" data-description="Pryde has a 'phased' ability that allows her, as well as objects or people she is in contact with, to become intangible.">
+                    <img src="./assets/imagens/card-kitty-pryde.jpg" alt="Character Kitty Pryde member of the x-men">
+                </li>
+                <li class="character" id="storm" data-name="Storm" data-description="Storm is able to manipulate the weather, and alter the climate, thus having influence over the elements of nature.">
+                    <img src="./assets/imagens/card-storm.jpg" alt="Character Storm member of the x-men">
+                </li>
+                <li class="character" id="rogue" data-name="Rogue" data-description="Rogue has the ability to absorb the vitality, memories, abilities and powers of other living beings through skin contact.">
+                    <img src="./assets/imagens/card-rogue.jpg" alt="Character Rogue member of the x-men">
+                </li>
+                <li class="character" id="wolverine" data-name="Wolverine" data-description="In addition to his deadly adamantium claws, capable of cutting through anything, he has a powerful healing suit; it ages slowly - which makes it virtually immortal">
+                    <img src="./assets/imagens/card-wolverine.jpg" alt="Character Wolverine member of the x-men">
+                </li>
+                <li class="character" id="nightcrawler" data-name="Nightcrawler" data-description="Nightcrawler possesses superhuman agility, and the ability to teleport, invisibility in deep shadows, and his hands and feet stick to walls.">
+                    <img src="./assets/imagens/card-nightcrawler.jpg" alt="Character Nightcrawler member of the x-men">
+                </li>
+                <li class="character" id="magneto" data-name="Magneto" data-description="Magneto can control and manipulate magnetic fields far beyond the ability to control metal">
+                    <img src="./assets/imagens/card-magneto.jpg"
+                        alt="Character Magneto leader of the mutant brotherhood">
+                </li>
+            </ul>
+        </section>
+        <section class="selected-character">
+            <img src="./assets/imagens/card-cyclops.png" alt="Selected Character" class="big-character">
+
+            <div class="character-information">
+                <h2 class="character-name" id="character-name">Cyclops</h2>
+                <p class="character-description" id="character-description">Cyclops is a mutant, possessing the power to project pure energy from his ruby-red eyes.</p>
+            </div>
+        </section>
+    </main>
+
+    <script src="./assets/js/script.js"></script>
+</body>
+
+</html>

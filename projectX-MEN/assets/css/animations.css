@@ -1,0 +1,32 @@
+.header img {
+    animation: appear 1s forwards ease-in;
+}
+
+.selected-character {
+    animation: leftToRight 500ms 1s backwards ease-in;
+}
+
+.characters {
+    animation: rightToLeft 500ms 500ms backwards ease-in;
+}
+
+@keyframes appear {
+    from {
+        scale: 0.5;
+        opacity: 0;
+    }
+}
+
+@keyframes leftToRight {
+    from {
+        transform: translateX(100px);
+        opacity: 0;
+    }
+}
+
+@keyframes rightToLeft {
+    from {
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+}

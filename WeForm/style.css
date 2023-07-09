@@ -1,0 +1,183 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    font-size: 62.5%;
+    --color-hot: #FF5678;
+    --border-color:1px solid rgba(0, 0, 0, 0.15); 
+    --border-radius:1.2rem; 
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+
+a {
+    text-decoration: none;
+}
+
+.content {
+    max-width: clamp(100rem,20rem + 80vw,140rem);
+    margin: 11rem auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+aside{
+    text-align: center;
+}
+
+aside img {
+    width: clamp(30rem,5rem + 40vw,55rem);
+}
+aside h1 {
+    font-size: 6.4rem;
+    line-height: 7.5rem;
+}
+
+span {
+    color: var(--color-hot);
+}
+
+main {
+    width: 60rem;
+    border: var(--border-color);
+    padding: 4.4rem 5.7rem;
+    border-radius: var(--border-radius);
+}
+
+main h2 {
+    max-width: 43rem;
+    font-size: 3.6rem;
+}
+
+main .actions {
+    display: flex;
+    flex-flow: column wrap;
+}
+
+main .actions a{
+    border-radius: var(--border-radius);
+    font-size: 2.4rem;
+    height: 5.5rem;
+    background-color: #35E6E9;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+
+    margin-top: 5.4rem;
+}
+
+main .actions a + a {
+    background-color: var(--color-hot);
+    margin-top: 4.8rem;
+}
+
+main footer {
+    text-align: center;
+}
+
+main footer p {
+    font-size: 1.6rem;
+    margin-top: 8rem;
+}
+main footer a {
+    margin-top: 1rem;
+    font-size: 1.8rem;
+    display: block;
+    color: #000;
+}
+
+main header {
+    display: flex;
+    align-items: center;
+    gap: 1.8rem;
+}
+
+main header i.fa-angle-left {
+    font-size: 2.2rem;
+    color: var(--color-hot);
+}
+
+main form {
+    margin-top: 1.6rem;
+    display: flex;
+    flex-direction: column;
+}
+
+main form label {
+    font-size: 1.8rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    display: block;
+
+    margin: 1.4rem 0;
+}
+
+main form :is(input, select){
+    width: 100%;
+    height: 5.5rem;
+
+    background-color: #fff;
+    border: var(--border-color);
+    border-radius: var(--border-radius);
+
+    padding: 2rem;
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+main form :is(input, select):focus {
+    outline: 1px solid #35E6E9;
+}
+
+main form select {
+    appearance: none;
+}
+
+
+main form .select-div {
+    position: relative;
+}
+main form .select-div::after {
+    color: #35E6E9;
+    font-size: 2.2rem;
+    content: '\f107';
+    font-family: 'Font Awesome 6 Free';
+    font-weight: 600;
+    position: absolute;
+    top: 1.6rem;
+    right: 1.6rem;
+    z-index: 1;
+}
+
+
+main form .points {
+    position: relative;
+}
+
+main form input + button {
+    position: absolute;
+    right: -2.7rem;
+    top: calc(2.7rem + 3.9rem);
+    background-color: transparent;
+    border: none;
+    color: #35E6E9;
+    font-size: 2.4rem;
+    cursor: pointer;
+}
+
+
+@media (max-width: 990px){
+    .content {
+        flex-direction: column;
+    }
+}
